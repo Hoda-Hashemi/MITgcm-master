@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: MITgcmutils
+Version: 0.2.1
+Summary: Python utilities for MITgcm
+Home-page: http://mitgcm.org/
+Author: MITgcm Developers and Contributors
+Author-email: mitgcm-support@mitgcm.org
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# MITgcmutils
+
+Python utilities for the MIT General Circulation Model,
+[MITgcm](http://mitgcm.org).
+
+This package is developed as a part of MITgcm on
+[github](https://github.com/MITgcm/MITgcm/tree/master/utils/python/MITgcmutils).
+
+It is documented in the MITgcm
+[manual](http://mitgcm.rtfd.io/en/latest/utilities/utilities.html#mitgcmutils).
