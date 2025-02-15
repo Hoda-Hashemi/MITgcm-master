@@ -22,6 +22,9 @@ core
 # OSX system files
 .DS_store
 
+#txt files
+*.txt
+
 /doc/_build/
 
 /eesupp/src/exch_xy_r[ls48].F
@@ -116,3 +119,4 @@ core
 /verification/*/tr_run.*
 
 /tools/TAP_support/ADFirstAidKit/*.gch
+
