@@ -55,8 +55,6 @@ meta_files = [
 # Remove the .data extension from the file names
 base_names = [os.path.join(base_path, file.replace('.data', '')) for file in data_files]
 
-
-
 # Read and concatenate data
 data_list = [mit.rdmds(base_name) for base_name in base_names]
 data = np.concatenate(data_list, axis=0)
@@ -72,5 +70,5 @@ cbar = plt.colorbar(im, ax=ax)
 ax.set_title('MITgcm Output Data')
 plt.show()
 
-
 # %%
+
