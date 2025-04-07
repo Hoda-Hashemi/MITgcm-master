@@ -79,7 +79,7 @@ kx = 73;
 kyg = [5 6 7];
 %kyg = [4 5 6 7];
 da = grd.dz*grd.dyg(kx,kyg);
-for k=kt;
+for k=kt
   TDP(k) = sum(nansum(squeeze(u(kx,kyg,:,k))'.*da))*1e-6; % in Sv
   TDPz(:,k) = nansum(squeeze(u(kx,kyg,:,k)).*da')'*1e-6; % in Sv
 end

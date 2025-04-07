@@ -1,4 +1,4 @@
-function grid = mit_loadgrid(varargin);
+function grid = mit_loadgrid(varargin)
 % function grid = mit_loadgrid(dname);
 % load the geometry of an arbitrary run with the mitgcm
 
