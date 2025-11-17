@@ -25,7 +25,8 @@
  exactConserv=.TRUE.,
  momTidalForcing=.FALSE.,
  momAdvection=.FALSE.,
-#useCoriolis=.FALSE.,
+#  useCoriolis=.FALSE.,
+useCoriolis=.TRUE.,
  tempStepping=.FALSE.,
  saltStepping=.FALSE.,
  readBinaryPrec=64,
@@ -54,13 +55,12 @@
  monitorFreq=1.,
  &
 
-# Gridding parameters
+# Gridding parameters 
  &PARM04
  usingCurvilinearGrid=.TRUE.,
  radius_fromHorizGrid=6370.E3,
  delR=1366.,
  &
-
 # Input datasets
  &PARM05
  bathyFile='bathy_f2.bin',

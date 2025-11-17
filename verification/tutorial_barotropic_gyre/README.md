@@ -8,6 +8,9 @@ Configure and compile the code:
 ```
   cd build
   ../../../tools/genmake2 -mods ../code [-of my_platform_optionFile]
+  
+  ../../../tools/genmake2 -mods ../code/ -of ../../../tools/build\_options/linux\_ia32\_gfortran
+
   make depend
   make
   cd ..

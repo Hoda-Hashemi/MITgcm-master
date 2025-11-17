@@ -1,7 +1,7 @@
 # Model parameters
 # Continuous equation parameters
  &PARM01
- viscAh=4.E2,
+ viscAh=4.E-8,
  f0=1.E-4,
  beta=1.E-11,
  rhoConst=1000.,
@@ -46,7 +46,7 @@
 
 # Input datasets
  &PARM05
- bathyFile='bathy.bin'
+ bathyFile='bathy.bin',
  zonalWindFile='windx_cosy.bin',
 #zonalWindFile='windx_siny.bin',
  meridWindFile=,

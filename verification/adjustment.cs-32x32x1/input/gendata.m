@@ -63,4 +63,29 @@ figure(2);clf;
 var=reshape(h,[nx*nf ny]);
 grph_CS(var,G.xC,G.yC,G.xG,G.yG,ccB(1),ccB(2),shift,cbV,AxBx,kEnv);
 
-%----------
+
+% %----------
+% % Save all bathymetry plots
+% for f = 1:nf
+%     hfig = figure('Visible','off');  % create figure hidden
+%     imagesc(dp(:,f,:));              % plot 2D slice
+%     colorbar;
+%     axis equal tight;
+%     title(['Bathymetry Face ', num2str(f)]);
+%     filename = ['bathy_f', num2str(f), '.png'];
+%     saveas(hfig, filename);
+%     close(hfig);
+% end
+
+% % ------------------------------
+% % Save all SSH anomaly plots
+% for f = 1:nf
+%     hfig = figure('Visible','off');
+%     imagesc(h(:,f,:));
+%     colorbar;
+%     axis equal tight;
+%     title(['SSH Anomaly Face ', num2str(f)]);
+%     filename = ['ssh_f', num2str(f), '.png'];
+%     saveas(hfig, filename);
+%     close(hfig);
+% end

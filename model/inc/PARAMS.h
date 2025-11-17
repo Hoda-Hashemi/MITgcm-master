@@ -10,6 +10,7 @@ C     here. Notes describing the parameters can also be found here.
 
 CEOP
 
+
 C--   Contants
 C     Useful physical values
       Real*8 PI
@@ -242,6 +243,7 @@ C-    plotLevel           :: controls printing of field maps ; higher -> more fl
      &        selectBotDragQuadr, pCellMix_select,
      &        readBinaryPrec, writeBinaryPrec,
      &        rwSuffixType, monitorSelect, debugLevel, plotLevel
+
       INTEGER cg2dMaxIters
       INTEGER cg2dMinItersNSA
       INTEGER cg2dPreCondFreq
@@ -459,6 +461,8 @@ C                        & Last iteration, in addition multiple of dumpFreq iter
      & writePickupAtEnd,
      & timeave_mdsio, snapshot_mdsio, monitor_stdio,
      & outputTypesInclusive, dumpInitAndLast
+
+
 
       LOGICAL fluidIsAir
       LOGICAL fluidIsWater
