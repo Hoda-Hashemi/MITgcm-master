@@ -1,0 +1,30 @@
+# MITgcm control parameters (template)
+# Edit names/values to match your local MITgcm data file conventions if needed.
+
+# Grid and domain (angular)
+nlon = 1440         # number of longitude points
+nlat = 720          # number of latitude points
+
+# Time stepping
+dt = 60             # time-step [s]
+run_days = 10       # total run duration in days (template)
+tn = run_days*24*3600/dt
+
+# Physics
+gravity = 9.81
+Omega = 7.2921159e-5
+H0 = 4000.0         # mean layer depth [m]
+
+# IO: names of initial condition files (written by init_qgs.py)
+UinitFile = 'input/U_init.bin'
+VinitFile = 'input/V_init.bin'
+ETAinitFile = 'input/ETA_init.bin'
+DepthFile = 'input/DEPTH.bin'   # constant depth (H0)
+precision = 'float32'           # 'float32' or 'float64'
+
+# Output settings (update diag_table to match)
+diag_frequency = 3600   # seconds between big dumps (template)
+
+# Notes:
+# - This is a template. Use the exact MITgcm keys expected by your build or your existing tutorial Global_Oce_latlon.
+# - If your MITgcm build is double precision, set precision=float64 and write doubles with init_qgs.py

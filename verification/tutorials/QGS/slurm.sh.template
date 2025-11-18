@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=qgs_init
+#SBATCH --output=qgs.out
+#SBATCH --error=qgs.err
+#SBATCH --time=02:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=48
+#SBATCH --partition=short
+
+module load python  # or the module stack needed on your system
+srun python3 init_qgs.py --nx 1440 --ny 720 --H 4000 --dt 60 --L 1e6 --U0 0.1 --outdir ./input
+
+# To run MITgcm, replace the next line with your MPI command and executable
+# srun /path/to/mitgcmuv

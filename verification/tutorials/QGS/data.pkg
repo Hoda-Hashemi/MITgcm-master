@@ -1,0 +1,11 @@
+# MITgcm package switches (template for single-layer shallow-water)
+# Edit according to your configured packages.
+# Typical switches for a shallow-water single-layer experiment might include:
+SHELL = .FALSE.
+SEAICE = .FALSE.
+SHELF = .FALSE.
+ATM = .FALSE.
+
+# Shallow-water specific: ensure appropriate solver/pakages in your build
+SHALLOW_WATER = .TRUE.   # (template) ensure the shallow-water option is available in your MITgcm build
+# If your MITgcm uses a different name for the shallow-water package, set that here.
